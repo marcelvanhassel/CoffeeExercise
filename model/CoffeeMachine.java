@@ -118,6 +118,7 @@ public class CoffeeMachine {
             this.grindCoffee();
             this.heatWater();
             cup.setContents(this.pushWaterThroughCoffee());
+            cup.setEmpty(false);
             if (type.equals("cappuccino")) {
                 this.steamMilk();
                 this.addMilk(cup.getContents());
